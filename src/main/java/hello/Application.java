@@ -129,8 +129,8 @@ public class Application {
 
     String[] directions = {"N", "S", "E", "W"};
     String[] rotations = new String[]{"R", "L"};
-    String[] rotationsAndForward = new String[]{"R", "L", "F"};
-    int i = new Random().nextInt(3);
+    String[] rotationsAndForward = new String[]{"R", "L", "F", "F", "F"};
+    int i = new Random().nextInt(5);
 
     PlayerState me = arenaUpdate.arena.state.get(arenaUpdate._links.self.href);
     if (me.wasHit) {
