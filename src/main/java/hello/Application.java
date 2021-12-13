@@ -67,7 +67,7 @@ public class Application {
 
     PlayerState me = arenaUpdate.arena.state.get(arenaUpdate._links.self.href);
     if (me.wasHit) {
-        return "F";
+        return rotationsAndForward[i];
     }
     for (Entry<String,PlayerState> entry : arenaUpdate.arena.state.entrySet()) {
         if (entry.getKey().equals(arenaUpdate._links.self.href)){
